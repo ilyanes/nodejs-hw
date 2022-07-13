@@ -35,6 +35,10 @@ async function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-invokeAction(argv);
+// invokeAction(argv);
 
-// invokeAction({ action: "get", id: "9" });
+(async () => {
+  await invokeAction(argv);
+})();
+
+// invokeAction({ action: "get", id: "5" });
