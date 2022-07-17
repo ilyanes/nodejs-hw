@@ -41,4 +41,15 @@ async function invokeAction({ action, id, name, email, phone }) {
   await invokeAction(argv);
 })();
 
+// invokeAction(argv).then().catch();
+
+// const start = async (argv) => {
+//   try {
+//     await invokeAction(argv);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// start(argv);
+
 // invokeAction({ action: "get", id: "5" });
